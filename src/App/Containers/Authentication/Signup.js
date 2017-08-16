@@ -59,7 +59,7 @@ class SignUp extends Component{
                     this.props.signUp({id:res, username:this.state.username, password:this.state.password, avatar:this.state.avatar, saveLogin:this.state.saveLogin});
                 }).catch(err=>{
                     console.log("Failed",err);
-                    this.setState({loading:false, password:'', error:true, errorMsg:"Username and / or password is incorrect"});
+                    this.setState({loading:false, password:'', error:true, errorMsg:"User already exists, Please login"});
                     this.passwordInput.focus();
                 })
             } else{
