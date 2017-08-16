@@ -1,0 +1,58 @@
+@import './Styles.scss';
+
+.auth_contain{
+    // display: flex;
+    background-color:$authbg;
+    height:100vh;
+    width:100vw;
+    display: flex;
+    align-items: center;
+    // justify-content: center;
+    flex-direction: column;
+
+    .title{
+        font-size: 1.8rem;
+        font-weight:800;
+        margin-top:60px;
+        margin-bottom:40px;
+    }
+
+    .switch_row{
+        margin-bottom:25px;
+        .switch_button{
+            background-color: $dark;
+            color:white;
+            &:hover{
+                background-color: $button;
+                color:black;
+            }
+        }
+    }
+
+    .auth_box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 140px;
+        margin: auto;
+        label{
+            margin-top:8px;
+            // align-self: flex-start;
+        }
+        .input{
+            max-width:150px;
+        }
+
+        .submit_button{
+            font-weight:600;
+            font-size:.9rem;
+        }
+        
+        .signup_button{
+            font-weight:600;
+            font-size:.9rem;
+            width:80px;
+        }
+    }
+    
+}

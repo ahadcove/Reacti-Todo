@@ -1,0 +1,51 @@
+@import '../Styles/Styles.scss';
+
+.item_contain{
+    // background:gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom:10px;
+    .close_icon{
+        cursor:pointer;
+        text-align: right;
+        position:absolute;
+        right:20px;
+        &:hover{
+            color:red;
+        }
+        &:active{
+            color:gray;
+        }
+    }
+    
+    .top{
+        .item_title{
+            font-size:1.2rem;
+            font-weight:bold;
+        }
+        .check_box{
+            margin-right:10px;
+            background: $white;
+            border:solid black .2px;
+            display: inline-block;
+            height: 10px;
+            width:10px;
+            overflow: hidden;
+            .check_mark{
+                height: 100%;
+                width: 100%;
+                border:solid green 3px;
+                border-top:hidden;
+                border-left:hidden;
+                transform: rotate(36deg) scale(0.8) translateX(-5px) translateY(-2px);
+            }
+        }
+    }
+    .item_description{
+        margin-left:25px;
+        font-style: italic;
+    }
+    
+
+}

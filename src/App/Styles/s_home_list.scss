@@ -1,0 +1,57 @@
+@import './Styles.scss';
+
+.list{
+    user-select: none;
+    background-color: $white;    
+    cursor: pointer;
+    // margin-right:40px;
+    margin-bottom:40px;
+    position: relative;
+    padding:10px;
+    height: 100px;
+    width:100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover{
+        background: none;    
+        .back_list{
+            background-color: $comp;
+        }
+    }
+    &:active{
+        background: none;    
+        color:white;
+        .back_list{
+            background-color:black;
+        }
+    }
+
+
+    .back_list{
+        position: absolute;
+        height: 100%;
+        width:100%;
+        z-index:10;
+    }
+
+    .home_close_icon{
+        cursor:pointer;
+        text-align: right;
+        position:absolute;
+        top:5px;
+        right:5px;
+        z-index: 15;
+        &:hover{
+            color:red;
+        }
+        &:active{
+            color:gray;
+        }
+    }
+
+    .list_name{
+        z-index:15;
+    }
+
+}

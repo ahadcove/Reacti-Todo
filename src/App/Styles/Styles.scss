@@ -1,0 +1,76 @@
+
+// HEX: #454140
+
+// HEX: #bd5734
+
+// HEX: #a79e84
+
+// HEX: #7a3b2e
+
+$dark:#230C0F;
+
+// Global Colors
+// $main:#688E26;
+$main:aquamarine;
+$comp: aquamarine;
+$authbg:#454140;
+$navbg:#083D77;
+$error:red;
+$white:ghostwhite;
+// $light:#EBEBD3;
+$light:#8B8BAE;
+$homebg: rgba(0,0,0,.2);
+$button: ghostwhite;
+
+body {
+    margin: 0;
+    padding: 0;
+    // font-family: sans-serif;
+    // font-family: 'Archivo', sans-serif;
+    // font-family: 'Roboto', sans-serif;
+    // font-family: 'Lato', sans-serif;
+    font-family: 'Saira', sans-serif;
+}
+
+.error{
+    color:$error;
+    font-style: italic;
+    margin:0 0 7px 0;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    &:visited{
+        color:inherit;
+    }
+    &:hover{
+        color:$main;
+    }
+}
+
+button{
+    cursor:pointer;
+    margin-top:10px;
+    // text-align: center;
+    align-self: flex-end;
+    width:50px;
+    height:30px;
+    background: none;
+    color: $button;
+    border:none;
+    &:hover{
+        background: lightblue;
+        color:white;
+        // border:solid .3px $button;
+    }
+    &:active{
+        outline:none;
+    }
+    &:focus{
+        outline:none;
+    }
+}

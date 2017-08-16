@@ -1,0 +1,43 @@
+@import '../Styles/Styles.scss';
+
+.todo_contain{
+    background-color:$homebg;
+    min-height:calc(100vh - 50px);
+    padding:30px 5px 10px 5px;
+
+    .list_item_name{
+        text-align:center;
+        font-size:1.3rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        margin: 0 0 20px 0px;
+    }
+
+    .add_item_contain{
+        margin:auto;
+        // margin-top: 20px;
+        margin-bottom:20px;
+        // text-align: center;
+        // min-width: 185px;
+        max-width:300px;
+        background:$light;
+        padding:5px 5px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .add_item_box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        .new_todo_title{
+            width:280px;
+            font-size:1rem;
+            font-weight:bold;
+        }
+        .new_todo_description{
+            width:280px;
+        }
+    }
+
+}
