@@ -50,7 +50,7 @@ class Nav extends Component{
             :
             <div className={"nav_contain"}>
                 <Link to='/'>Home</Link>
-                <div className={"title"}>Reacti List</div>
+                <div className={"title"}>Reacti Todo</div>
                 <div className={"profile_contain"}>
                     <div className={"avatar_box"} onClick={this.switchProfile}>
                         <div className={"avatar_and_name"}>
