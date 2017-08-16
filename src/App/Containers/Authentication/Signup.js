@@ -125,8 +125,8 @@ class SignUp extends Component{
                              <label>Confirm Password</label>
                                 <input className="input" name="confirmPassword" ref={(input) => { this.confirmInput = input; }} type="password" maxLength="25" value={this.state.confirmpassword} onChange={this._handleInputChange} onKeyPress={this._handleKeyPress} placeholder={"confirm"} />
                              <label>Avatar</label>
-                                <input className="input" name="avatar" type="text" ref={(input) => { this.avatarInput = input; }} value={this.state.avatar} onChange={this._handleInputChange} onKeyPress={this._handleKeyPress} placeholder={"avatar url"} />
                                 {this.state.avatar && <img className="avatar" src={this.state.avatar} alt={"Avatar"} />}
+                                <input className="input" name="avatar" type="text" ref={(input) => { this.avatarInput = input; }} value={this.state.avatar} onChange={this._handleInputChange} onKeyPress={this._handleKeyPress} placeholder={"avatar url"} />
                             {/* <div className="save_box">
                                 <label>Save Login </label>
                                 <button className="save_button" onClick={this.saveLogin} style={{backgroundColor: (this.state.saveLogin ? "blue" : 'white')}} />
