@@ -3,7 +3,6 @@ import {Route, Redirect, Switch} from 'react-router-dom';
 
 import Auth from './Containers/Authentication/Auth';
 import Nav from './Containers/Nav';
-import Footer from './Containers/Footer';
 import Home from './Containers/Home';
 import TodoList from './Containers/TodoList';
 
@@ -15,7 +14,6 @@ const Routes = () =>(
                         <Nav />
                         <Route exact path='/' component={Home} />
                         <Route exact path='/todo-list' component={TodoList} />
-                        {/* <Footer /> */}
                 </div>
             )} />
             <Redirect from='/**' to='/auth'/>

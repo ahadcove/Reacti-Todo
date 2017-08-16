@@ -1,8 +1,6 @@
 const userListReducer = (state={
     id:null,
     username: null,
-    id:null,
-    username: null,
     avatar: null,
     saveLogin: null,
     signedIn: false

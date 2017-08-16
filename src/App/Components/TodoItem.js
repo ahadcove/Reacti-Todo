@@ -3,7 +3,7 @@ import '../Styles/s_todo_item.css';
 
 const TodoItem = (props) => {
     const { completeItem, deleteItem} = props
-    const { id, listId, title, description, color, completed, isDeleted} = props.item
+    const { id, title, description, color, completed} = props.item
 
     let itemStyle = () => {
         let style = {

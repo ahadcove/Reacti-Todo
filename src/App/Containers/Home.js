@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import { withRouter, Link } from 'react-router-dom'
+import { withRouter } from 'react-router-dom'
 import { connect } from 'react-redux';
 import {addList, deleteList} from '../../Services/Actions/TodoListActions'
 import HomeList from '../Components/HomeList';
@@ -109,9 +109,7 @@ class Home extends Component{
                          <button onClick={this.addTodoList}>Done</button>
                     </div>
                     <div className={"list_contain"}>
-                            {/* {this.state.loading && <Loader />} */}
                             {this.getTodos().map(list=>{
-                                {/* return <li className={"list"} key={list.id} onClick={()=>this.gotoTodo(list)}>{list.name}</li> */}
                                 return <HomeList key={list.id} gotoTodo={()=>this.gotoTodo(list)} list={list} deleteList={this.deleteAttempt} />
                             })}
                     </div>

@@ -6,7 +6,6 @@ import '../../Styles/s_auth.css';
 import Loader from '../../Utilities/Loader';
 // const dialog = require('electron').remote.dialog
 
-let auth;
 class SignUp extends Component{
     constructor(){
         super();
@@ -35,7 +34,6 @@ class SignUp extends Component{
     // Check to make sure username has not been used
     checkForUser = () => {
         return new Promise((resolve, reject)=>{
-            let found=false;
             setTimeout(_=>{                
                 for (let i = 0; i < this.props.user_list.users.length; i++) {
                     if(this.props.user_list.users[i].username === this.state.username) {
@@ -128,7 +126,7 @@ class SignUp extends Component{
                                 <input className="input" name="confirmPassword" ref={(input) => { this.confirmInput = input; }} type="password" maxLength="25" value={this.state.confirmpassword} onChange={this._handleInputChange} onKeyPress={this._handleKeyPress} placeholder={"confirm"} />
                              <label>Avatar</label>
                                 <input className="input" name="avatar" type="text" ref={(input) => { this.avatarInput = input; }} value={this.state.avatar} onChange={this._handleInputChange} onKeyPress={this._handleKeyPress} placeholder={"avatar url"} />
-                                {this.state.avatar && <img className="avatar" src={this.state.avatar} />}
+                                {this.state.avatar && <img className="avatar" src={this.state.avatar} alt={"Avatar"} />}
                             {/* <div className="save_box">
                                 <label>Save Login </label>
                                 <button className="save_button" onClick={this.saveLogin} style={{backgroundColor: (this.state.saveLogin ? "blue" : 'white')}} />

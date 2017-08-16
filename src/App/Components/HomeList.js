@@ -3,7 +3,7 @@ import '../Styles/s_home_list.css';
 
 const HomeList = (props) => {
     const { deleteList, gotoTodo} = props
-    const { id, listId, name, background, color, isDeleted} = props.list
+    const { id, name, background, color} = props.list
 
     let listStyle = () => {
         let style = {}

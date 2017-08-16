@@ -6,7 +6,6 @@ import {signIn} from '../../../Services/Actions/AuthActions';
 import '../../Styles/s_auth.css';
 import Loader from '../../Utilities/Loader';
 
-let auth;
 class Login extends Component{
     constructor(){
         super();
@@ -30,7 +29,6 @@ class Login extends Component{
 
     checkForUser = () => {
         return new Promise((resolve, reject)=>{
-            let found=false;
             setTimeout(_=>{
                 for (let i = 0; i < this.props.user_list.users.length; i++) {
                     if(this.props.user_list.users[i].username === this.state.username && this.props.user_list.users[i].password === this.state.password) {
@@ -51,7 +49,7 @@ class Login extends Component{
             .then(res=>{
                 console.log("Success",res);
                 this.setState({loading:false, error:false, errorMsg:""});
-                this.props.signIn({id:res.id, avatar:res.avatar, username:this.state.username, avatar:res.avatar, saveLogin:this.state.saveLogin});
+                this.props.signIn({id:res.id, username:this.state.username, avatar:res.avatar, saveLogin:this.state.saveLogin});
             }).catch(err=>{
                 console.log("Failed",err);
                 this.setState({loading:false, password:'', error:true, errorMsg:"Username and / or password is incorrect"});
