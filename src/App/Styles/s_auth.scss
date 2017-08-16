@@ -3,7 +3,7 @@
 .auth_contain{
     // display: flex;
     background-color:$authbg;
-    height:100vh;
+    min-height:100vh;
     width:100vw;
     display: flex;
     align-items: center;
@@ -13,12 +13,12 @@
     .title{
         font-size: 1.8rem;
         font-weight:800;
-        margin-top:60px;
-        margin-bottom:40px;
+        margin-top:50px;
+        margin-bottom:30px;
     }
 
     .switch_row{
-        margin-bottom:25px;
+        margin-bottom:15px;
         .switch_button{
             background-color: $dark;
             color:white;
