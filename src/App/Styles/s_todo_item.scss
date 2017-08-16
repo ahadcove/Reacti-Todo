@@ -6,6 +6,9 @@
     flex-direction: column;
     justify-content: center;
     margin-bottom:10px;
+    width: 40vw;
+    position: relative;
+    margin: auto;
     .close_icon{
         cursor:pointer;
         text-align: right;
@@ -21,10 +24,12 @@
     
     .top{
         .item_title{
+            cursor:pointer;
             font-size:1.2rem;
             font-weight:bold;
         }
         .check_box{
+            cursor:pointer;
             margin-right:10px;
             background: $white;
             border:solid black .2px;
@@ -43,9 +48,12 @@
         }
     }
     .item_description{
+        cursor:pointer;
         margin-left:25px;
         font-style: italic;
     }
-    
 
+    @media screen and (max-width: 600px) {
+        width: 90vw;        
+     }
 }
