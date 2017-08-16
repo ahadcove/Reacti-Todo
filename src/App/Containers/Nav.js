@@ -54,7 +54,7 @@ class Nav extends Component{
                 <div className={"profile_contain"}>
                     <div className={"avatar_box"} onClick={this.switchProfile}>
                         <div className={"avatar_and_name"}>
-                            {this.props.auth.avatar ? <img src={this.props.auth.avatar} class={"avatar_image"} alt={"Avatar"} /> : <FaUser className={"avatar"} />}
+                            {this.props.auth.avatar ? <img src={this.props.auth.avatar} className={"avatar_image"} alt={"Avatar"} /> : <FaUser className={"avatar"} />}
                             <div className={"username"}>{this.props.auth.username}</div>
                         </div>
                         {this.state.avatarOpen &&

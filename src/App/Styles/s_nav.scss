@@ -29,11 +29,19 @@
     &:hover{
         color:$main;
     }
+
+    .avatar_and_name{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
     .avatar{
         font-size:2rem;
     }
     .avatar_image{
-        height: 40px;
+        height: 30px;
         width: 40px;
     }
 
