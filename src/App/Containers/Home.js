@@ -100,7 +100,7 @@ class Home extends Component{
             <div className={"home_contain"}>
                 <div>
                     <div className={"add_list_contain"}>
-                        <div className={"add_title"}>Add Todo</div>
+                        <div className={"add_title"}>Add Todo Folder</div>
                          {/* <label>Title</label> */}
                          {this.state.error && <div className={"error"}>{this.state.errorMsg}</div>}
                          <div className={"add_box"}>

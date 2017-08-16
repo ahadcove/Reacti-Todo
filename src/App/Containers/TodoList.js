@@ -121,7 +121,7 @@ class TodoList extends Component{
                         <span>{this.state.listName}</span> List
                     </div>
                     <div className={"add_item_contain"}>
-                        <div className={"add_title"}>Add Todo Folder</div>
+                        <div className={"add_title"}>Add Todo</div>
                          {/* <label>Title</label> */}
                          {this.state.error && <div className={"error"}>{this.state.errorMsg}</div>}
                          <div className={"add_item_box"}>
