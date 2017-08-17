@@ -25,13 +25,7 @@ class Nav extends Component{
         }
     }
 
-    componentDidUpdate(){
-        // if(!this.props.auth.username || !this.props.auth.id || !this.props.auth.signedIn){
-        //     this.setState({shouldRedirect:true})
-        // } else{
-        //     this.setState({shouldRedirect:false})
-        // }
-    }
+    componentDidUpdate(){}
 
     switchProfile = () => {
         this.setState({avatarOpen:!this.state.avatarOpen});

@@ -25,8 +25,6 @@ const TodoItem = (props) => {
                 </div>
                 <span className={"item_title"} style={itemStyle()} onClick={()=>completeItem(id)}>{title}</span>
             </div>
-            {/* <div className={"item_head"} style={itemStyle()}>
-            </div> */}
             {!completed && <div className={"item_description"} style={{}} onClick={()=>completeItem(id)}>{description}</div>}
         </li>
     )

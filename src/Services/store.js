@@ -22,6 +22,4 @@ const store = createStore(
 // Periodically persisting the store
 persistStore(store)
       
-
-// export default createStore(reducers, savedState, middleware);
 export default store;

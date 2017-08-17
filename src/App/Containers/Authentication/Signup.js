@@ -4,7 +4,6 @@ import { connect } from 'react-redux';
 import {signUp} from '../../../Services/Actions/AuthActions';
 import '../../Styles/s_auth.css';
 import Loader from '../../Utilities/Loader';
-// const dialog = require('electron').remote.dialog
 
 class SignUp extends Component{
     constructor(){

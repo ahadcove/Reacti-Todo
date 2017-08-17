@@ -1,9 +1,6 @@
 @import './Styles.scss';
 
 .home_contain{
-    // display: flex;
-    // justify-content: center;
-    // align-items: center;
     background-color:$homebg;
     min-height:calc(100vh - 60px);
     padding:30px 5px 10px 5px;
@@ -11,9 +8,7 @@
 
 .add_list_contain{
     margin:auto;
-    // margin-top: 20px;
     margin-bottom:20px;
-    // text-align: center;
     width: 185px;
     background:$light;
     padding:5px 5px;

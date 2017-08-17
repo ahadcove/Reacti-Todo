@@ -20,7 +20,6 @@ class Home extends Component{
     }
 
     componentDidMount(){
-        // if(!this.props.auth.username || !this.props.auth.twitchOAuth || !this.props.auth.hue.ip || !this.props.auth.hue.user)
        console.log("Home Mounted");       
     }
     componentWillUnmount(){
@@ -66,11 +65,7 @@ class Home extends Component{
 
     deleteAttempt = (id) => {
         console.log("Deleting list", id);
-        // let index = this.myIndexOf(id);
-        // console.log("Index", index);
-        // if(index>=0){
         this.props.deleteList(id);
-        // }
     }
 
   _handleInputChange = (e) =>{
@@ -86,7 +81,6 @@ class Home extends Component{
         if (e.key === 'Enter') {
             switch(e.target.name){
                 case "new_list_name":
-                    // this.descriptionInput.focus();
                     this.addTodoList();
                 break;
                 default:
@@ -101,7 +95,6 @@ class Home extends Component{
                 <div>
                     <div className={"add_list_contain"}>
                         <div className={"add_title"}>Add Todo Folder</div>
-                         {/* <label>Title</label> */}
                          {this.state.error && <div className={"error"}>{this.state.errorMsg}</div>}
                          <div className={"add_box"}>
                             <input className={"title_input"} name="new_list_name" ref={(input) => { this.nameInput = input; }} type="text" maxLength="45" value={this.state.new_list_name} onChange={this._handleInputChange} placeholder={"Name"} onKeyPress={this._handleKeyPress} />   

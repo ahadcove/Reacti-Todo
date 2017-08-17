@@ -2,7 +2,6 @@ import React,{Component} from 'react';
 import { withRouter } from 'react-router-dom'
 import { connect } from 'react-redux';
 import {signIn} from '../../../Services/Actions/AuthActions';
-// const dialog = require('electron').remote.dialog
 import '../../Styles/s_auth.css';
 import Loader from '../../Utilities/Loader';
 

@@ -21,20 +21,17 @@ class TodoList extends Component{
     }
 
     componentDidMount(){
-        // if(!this.props.auth.username || !this.props.auth.twitchOAuth || !this.props.auth.hue.ip || !this.props.auth.hue.user)
        console.log("TodoList Mounted");
        console.log("Location",this.props.location);
        this.setState({listId:this.props.location.state.listId, listName:this.props.location.state.listName});
-
     }
+
     componentWillUnmount(){
         console.log("TodoList is unmounting");
     }
 
     // Check to see if items match list id
     isList = (item) => {
-        // if(item.listId == this.state.id ){
-            // TODO: Retrieve id from props
         if(item.listId == this.state.listId && !item.isDeleted){
             return true;
         } else
@@ -71,23 +68,9 @@ class TodoList extends Component{
         this.props.completeItem(id);
     }
 
-    // Find index of item
-    // myIndexOf = (id) => {    
-    //     for (let i = 0; i < this.props.todo_items.items.length; i++) {
-    //         if (this.props.todo_items.items[i].id == id) {
-    //             return i;
-    //         }
-    //     }
-    //     return -1;
-    // }
-
     deleteAttempt = (id) => {
         console.log("Deleting item", id);
-        // let index = this.myIndexOf(id);
-        // console.log("Index", index);
-        // if(index>=0){
         this.props.deleteItem(id);
-        // }
     }
 
      _handleInputChange = (e) =>{
@@ -122,7 +105,6 @@ class TodoList extends Component{
                     </div>
                     <div className={"add_item_contain"}>
                         <div className={"add_title"}>Add Todo</div>
-                         {/* <label>Title</label> */}
                          {this.state.error && <div className={"error"}>{this.state.errorMsg}</div>}
                          <div className={"add_item_box"}>
                             <input className={"new_todo_title"} name="new_todo_title" ref={(input) => { this.titleInput = input; }} type="text" maxLength="45" value={this.state.new_todo_title} onChange={this._handleInputChange} placeholder={"Title"} onKeyPress={this._handleKeyPress} />   

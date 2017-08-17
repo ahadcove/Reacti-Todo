@@ -21,7 +21,6 @@ class Auth extends Component{
 
         else if(this.props.auth.username && this.props.auth.signedIn){
             console.log("Signed In");
-            // this.props.history.push("/home");
         }
     }
 
@@ -31,7 +30,6 @@ class Auth extends Component{
             if(this.props.auth.saveLogin){
                 // this.props.saveReduxState();
             }
-            // this.props.history.push("/home");
         }
     }
 
@@ -61,17 +59,7 @@ const mapState = (state = {}) => {
 };
 
 const mapDispatch = (dispatch) => {
-    return {
-        // freshLogin:() => {
-        //     dispatch(freshLogin())
-        // },
-        // saveReduxState:() => {
-        //     dispatch(saveReduxState())
-        // },
-        // resetAllSettings:() => {
-        //     dispatch(resetAllSettings())
-        // }
-    }
+    return {}
 };
 
 export default withRouter(connect(mapState, mapDispatch)(Auth))

@@ -1,19 +1,10 @@
 
-// HEX: #454140
-
-// HEX: #bd5734
-
-// HEX: #a79e84
-
-// HEX: #7a3b2e
-
-$dark:#230C0F;
-
 // Global Colors
 // $main:#688E26;
 $main:aquamarine;
 $comp: aquamarine;
 $authbg:#454140;
+$dark:#230C0F;
 $navbg:#083D77;
 $error:red;
 $white:ghostwhite;
@@ -25,10 +16,6 @@ $button: ghostwhite;
 body {
     margin: 0;
     padding: 0;
-    // font-family: sans-serif;
-    // font-family: 'Archivo', sans-serif;
-    // font-family: 'Roboto', sans-serif;
-    // font-family: 'Lato', sans-serif;
     font-family: 'Saira', sans-serif;
 }
 
@@ -55,7 +42,6 @@ a{
 button{
     cursor:pointer;
     margin-top:10px;
-    // text-align: center;
     align-self: flex-end;
     width:50px;
     height:30px;
@@ -65,7 +51,6 @@ button{
     &:hover{
         background: lightblue;
         color:white;
-        // border:solid .3px $button;
     }
     &:active{
         outline:none;

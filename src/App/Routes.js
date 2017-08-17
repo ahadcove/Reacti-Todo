@@ -21,12 +21,3 @@ const Routes = () =>(
 )
 
 export default Routes;
-
-
-// <Route exact path="/" render={() => (
-//   loggedIn ? (
-//         <Redirect to="/dashboard"/>
-//       ) : (
-//         <PublicHomePage/>
-//       )
-//     )}/>

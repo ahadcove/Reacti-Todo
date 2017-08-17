@@ -12,7 +12,6 @@ const HomeList = (props) => {
     }
 
     return (
-        // <div className={"list"} style={{color:(background ? "black":"black")}}>
         <div className={"list"} >
             <span className={"home_close_icon"} onClick={()=>deleteList(id)}>x</span>
             <div className={"back_list"} onClick={()=>gotoTodo(props.list)}  />
