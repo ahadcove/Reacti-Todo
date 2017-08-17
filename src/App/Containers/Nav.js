@@ -1,8 +1,6 @@
 import React,{Component} from 'react';
-import {Redirect} from 'react-router-dom';
-import { withRouter } from 'react-router-dom'
+import { withRouter, Redirect, Link } from 'react-router-dom'
 import { connect } from 'react-redux';
-import {Link} from 'react-router-dom';
 import {signOut} from '../../Services/Actions/AuthActions';
 import FaUser from "react-icons/lib/fa/user";
 
